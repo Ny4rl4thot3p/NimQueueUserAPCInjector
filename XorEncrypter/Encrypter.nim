@@ -15,7 +15,6 @@ proc xorEncryptDecrypt(data: seq[byte], key: seq[byte]): seq[byte] =
 proc encodeShellcode(shellcode: seq[byte], key: seq[byte]): seq[byte] =
   result = xorEncryptDecrypt(shellcode, key)
 
-# Örnek kullanım
 let originalShellcode: seq[byte] = @[#shellcode
                                     ] 
 
